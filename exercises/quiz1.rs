@@ -13,11 +13,20 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
-
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(apple_count: i32) -> i32 {
+    /*
+    This calculates the prices of apples, and if more than wholesale
+    it requires only 1 rustbucks, else 2.
+     */
+    const WHOLESALE_THRESHOLD: i32 = 40;
 
+    if apple_count > WHOLESALE_THRESHOLD{
+        apple_count
+    } else {
+        apple_count * 2
+    }
+}
 // Don't modify this function!
 #[test]
 fn verify_test() {
